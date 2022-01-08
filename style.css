@@ -21,11 +21,11 @@ header {
   box-shadow: 3px 3px 7px darkgrey;
 }
 
-.cabeçalho{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.cabeçalho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cabeçalho > nav {
@@ -43,7 +43,6 @@ header {
 .home {
   text-decoration: none;
   color: var(--cor-principal);
-  
 }
 
 button {
@@ -55,25 +54,36 @@ body {
   display: grid;
   height: 100vh;
   grid-template-rows: 160px 5fr 1fr;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 4fr 1fr;
   font-family: Arial, Helvetica, sans-serif;
-
+  
 }
 
-#dispositivo-movel{
-  display:none;
+#dispositivo-movel {
+  display: none;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 4fr 4fr;
-    gap: 20px;
-    margin: 20px;
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  gap: 20px;
+  margin: 20px;
+  justify-items: center;
 }
 
+main>div>h2{
+  text-align: center;
+}
 main > div > img {
-    width: 150px;
-    height: 150px;
+  width: 150px;
+  height: 150px;
+}
+.sobre{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  
 }
 
 .mercado {
@@ -146,51 +156,166 @@ footer {
 }
 
 .imagens {
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- align-items: center;
- text-align: center;
- row-gap: 10px;
- float:left;
- margin-bottom: 20px;
- max-width:200px;
- max-height:150px;
- width: auto;
- height: auto; 
- margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  row-gap: 10px;
+  float: left;
+  margin-bottom: 20px;
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  border-radius: 50%;
 }
 
+ 
+ #area 
+ {
+  /* position:relative; */
+  left:37%;
+  top:29%;
+  width:320px;
+  height:270px;
+} 
+ #area #formulario 
+ {
+   position:absolute; 
+   display:block; 
+} 
+fieldset
+{
+  width:60vw;
+  height:50vh;
+}
+
+
+
+legend
+{
+  font-style:bold;
+  font-family: "Segoe UI";
+}
+#formulario label
+{
+  position:absolute;
+  left:19px;
+  margin-right:5px;
+}
+
+
+#formulario input.campo_nome
+{
+  position:absolute;
+  left:95px;
+  top:23px;
+  width:225px;
+}
+#formulario input.campo_email
+{
+  position:absolute;
+  left:95px;
+  margin-top:2px;
+  width:225px;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 800px) {
-    body{
-      display: grid;
-      grid-template-columns: 100px 5fr 1fr;
-    }
   
-    .cabeçalho  {
-        width: 100vw;
-        margin: 0;
-        
-    }
-    .cabeçalho > nav > ul > li > a{
-      max-width: 10vw;
-      font-size: small;
-      display: none;
-    }
-    main{
-      display: flex;
-      flex-direction: column;
-    }
+  body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 115px 5fr 1fr;
+    grid-template-columns: 1fr 4fr;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .cabeçalho > nav > ul > li > a {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
 
-    #dispositivo-movel{
-      display: flex;
-    }
-    nav>ul>li{
-      display: inline;
-    }
-    
+  #dispositivo-movel {
+    display: contents;
+  }
+  .movel {
+    background-color: var(--cor-secundaria);
+  }
+  nav {
+    max-width: 100px;
+    width: 100%;
+  }
 
-    footer{
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
-    }
+  nav ul li {
+    border-bottom: 1px solid var(--cor-secundaria);
+  }
+
+  nav ul li a {
+    background-color: var(--cor-principal);
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s;
+    text-transform: uppercase;
+  }
+
+  nav ul li a:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+  }
+
+  footer > p {
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  footer > div > a > img {
+    width: 30px;
+  }
+  .logo-footer {
+    width: 70px;
+  }
+  .imagens{
+    margin-right: 0;
+  }
+  section{
+    display: none;
+  }
+
+  #formulario input.campo_nome
+{
+  /* position:absolute; */
+  /* left:95px;
+  top:23px;
+  width:225px; */
+}
+#formulario input.campo_email
+{
+  /* position:absolute; */
+  /* left:95px;
+  margin-top:2px;
+  width:225px; */
+}
 }
