@@ -56,7 +56,6 @@ body {
   grid-template-rows: 160px 5fr 1fr;
   grid-template-columns: 1fr 4fr 1fr;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 
 #dispositivo-movel {
@@ -66,6 +65,7 @@ body {
 main {
   display: grid;
   grid-template-columns: 4fr 4fr;
+
   gap: 20px;
   margin: 20px;
   justify-items: center;
@@ -74,16 +74,41 @@ main {
 main>div>h2{
   text-align: center;
 }
+
 main > div > img {
   width: 150px;
   height: 150px;
 }
+.main-home{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+
+}
+.div-home>h1{
+  grid-column: 1/-1;
+}
+
+.div-home{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap:  100px;
+  row-gap: 30px;
+}
+.nossos-contatos{
+  font-size: 18px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
 .sobre{
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  
 }
 
 .mercado {
@@ -238,6 +263,7 @@ fieldset.grupo .campo {
 
 
 
+
 @media screen and (max-width: 800px) {
   
   body {
@@ -311,6 +337,12 @@ fieldset.grupo .campo {
     display: none;
   }
   
-
-  /*Eu achei que tinha feito o PR*/
+.div-home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+
+}
+
