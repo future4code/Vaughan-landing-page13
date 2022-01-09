@@ -56,7 +56,6 @@ body {
   grid-template-rows: 160px 5fr 1fr;
   grid-template-columns: 1fr 4fr 1fr;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 
 #dispositivo-movel {
@@ -74,16 +73,26 @@ main {
 main>div>h2{
   text-align: center;
 }
+
 main > div > img {
   width: 150px;
   height: 150px;
 }
+
+.nossos-contatos{
+  font-size: 18px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
 .sobre{
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  
 }
 
 .mercado {
@@ -238,6 +247,7 @@ fieldset.grupo .campo {
 
 
 
+
 @media screen and (max-width: 800px) {
   
   body {
@@ -314,3 +324,4 @@ fieldset.grupo .campo {
 
   /*Eu achei que tinha feito o PR*/
 }
+
